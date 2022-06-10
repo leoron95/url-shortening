@@ -2,34 +2,35 @@ import React from 'react'
 
 export const Navbar = () => {
     return (
-        <nav className='flex flex-row justify-between pt-7 '>
-            <div className='flex justify-start gap-10'>
-                <div className=''>
-                    <img src="../../images/logo.svg" alt="logo" />
-                </div>
+        <div className=' flex md:flex-row justify-between  md:w-[1108px]  md:h-10 '>
 
-                <div className='flex flex-row items-center gap-3 text-sm font-bold'>
-                    <p className=' hover:text-black text-[#bfbfbf]'>
-                        <a href='/'>Features</a>
-                    </p>
-                    <p className='hover:text-black text-[#bfbfbf]'>
-                        <a href='/' >Pricing</a>
-                    </p>
-                    <p className='hover:text-black text-[#bfbfbf]'>
-                        <a href='/' >Resources</a>
-                    </p>
-                </div>
+        <div className='flex md:justify-start md:gap-11 items-center  md:mr-[165px]'>
+            <div>
+                <img src="../../images/logo.svg" alt="logo" />
             </div>
-            
 
-            <div className='flex flex-row items-center gap-5 mr-6 text-sm '>
-                <button className='text-[#bfbfbf] font-bold'>
-                    Login
-                </button>
-                <button className='text-white bg-[#2bd1d1] hover:bg-[#9be3e2] rounded-full h-7 w-20 font-bold'>
-                    Sign up
-                </button>
+            <div className='flex flex-row  text-[15px] font-bold align-middle'>
+                <p className='mr-7 hover:text-black text-[#9E9AA8]'>
+                    <a href='/'>Features</a>
+                </p>
+                <p className='mr-8 hover:text-black text-[#9E9AA8]'>
+                    <a href='/' >Pricing</a>
+                </p>
+                <p className='hover:text-black text-[#9E9AA8]'>
+                    <a href='/' >Resources</a>
+                </p>
             </div>
-        </nav>
+        </div>
+        
+
+        <div className=' flex flex-row  text-[15px] gap-9 '>
+            <button className='text-[#9E9AA8] font-bold'>
+                Login
+            </button>
+            <button className='text-white bg-[#2BD0D0] hover:bg-[#9be3e2] rounded-full h-10 w-[105px] font-bold'>
+                Sign up
+            </button>
+        </div>
+    </div>
     )
 }
